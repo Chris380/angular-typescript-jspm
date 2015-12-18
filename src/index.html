@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+</head>
+  <body ng-app="testApp" ng-strict-di ng-controller="AppController as app">
+    <ng-viewport></ng-viewport>
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="jspm.conf.js"></script>
+    <script>
+        System.import('app').catch(console.error.bind(console));
+    </script>
+  </body>
+</html>

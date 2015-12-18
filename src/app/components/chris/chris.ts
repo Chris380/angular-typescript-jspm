@@ -1,3 +1,5 @@
+"use strict";
+
 import * as angular from "angular";
 import ChrisController from "./chrisController";
 import ChrisService from "./chrisService";

@@ -1,5 +1,4 @@
 define(["require", "exports"], function (require, exports) {
-    "use strict";
     var chrisDirective = function () {
         return {
             restrict: "E",

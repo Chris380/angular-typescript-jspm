@@ -4,7 +4,7 @@ define(["require", "exports", "angular", "components/chris/chris", "angular/rout
         .config(["$componentLoaderProvider", SetTemplatesPath])
         .controller("AppController", ["$router", AppController]);
     function SetTemplatesPath($componentLoaderProvider) {
-        $componentLoaderProvider.setTemplateMapping(name => `src/app/components/${name}/${name}.html`);
+        $componentLoaderProvider.setTemplateMapping(function (name) { return ("src/app/components/" + name + "/" + name + ".html"); });
     }
     function AppController($router) {
         $router.config([

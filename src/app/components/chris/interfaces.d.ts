@@ -3,5 +3,6 @@ interface IChrisService {
 }
 
 interface IChrisController {
-  name: string;
+  message: string;
+  route: string;
 }

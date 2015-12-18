@@ -14,7 +14,7 @@ System.config({
   },
 
   map: {
-    "angular": "github:angular/bower-angular@1.4.8",
+    "angular": "github:angular/bower-angular@1.5.0-rc.0",
     "angular/router": "github:angular/router@0.5.3",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",

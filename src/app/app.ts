@@ -1,3 +1,5 @@
+"use strict";
+
 import * as angular from "angular";
 import "angular/router";
 import chris from "components/chris/chris";

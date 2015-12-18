@@ -1,3 +1,5 @@
+"use strict";
+
 class ChrisService implements IChrisService {
     name: string;
     constructor() {

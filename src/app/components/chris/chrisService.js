@@ -1,13 +1,14 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
-    class ChrisService {
-        constructor() {
+    var ChrisService = (function () {
+        function ChrisService() {
             this.name = "ChrisService";
         }
-        getName() {
+        ChrisService.prototype.getName = function () {
             return this.name;
-        }
-    }
+        };
+        return ChrisService;
+    })();
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.default = ChrisService;
 });

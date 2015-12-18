@@ -1,9 +1,13 @@
+"use strict";
+
 class ChrisController implements IChrisController {
-  name: string;
+  message: string;
+  route: string;
 
   static $inject = ["ChrisService", "$routeParams"];
   constructor(ChrisService: IChrisService, $routeParams){
-    this.name = `Ich bin der ChrisController und benutze ${ChrisService.getName()} Route ${$routeParams.name}. `;
+    this.message = `Ich bin der ChrisController und benutze ${ChrisService.getName()}. `;
+    this.route = `${$routeParams.name}`;
   }
 }
 
